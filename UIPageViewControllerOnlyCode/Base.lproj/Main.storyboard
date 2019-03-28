@@ -22,6 +22,9 @@
                                 <rect key="frame" x="20" y="44" width="374" height="37"/>
                                 <color key="pageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="actionDots:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ycd-0W-eee"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
