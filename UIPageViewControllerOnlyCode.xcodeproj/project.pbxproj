@@ -12,6 +12,7 @@
 		AC49A577224D4427004ECD04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49A575224D4427004ECD04 /* Main.storyboard */; };
 		AC49A579224D442A004ECD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC49A578224D442A004ECD04 /* Assets.xcassets */; };
 		AC49A57C224D442A004ECD04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC49A57A224D442A004ECD04 /* LaunchScreen.storyboard */; };
+		AC49A584224D44B7004ECD04 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC49A583224D44B7004ECD04 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AC49A578224D442A004ECD04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC49A57B224D442A004ECD04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC49A57D224D442A004ECD04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC49A583224D44B7004ECD04 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AC49A571224D4427004ECD04 /* AppDelegate.swift */,
 				AC49A573224D4427004ECD04 /* ViewController.swift */,
 				AC49A575224D4427004ECD04 /* Main.storyboard */,
+				AC49A583224D44B7004ECD04 /* MyViewController.swift */,
 				AC49A578224D442A004ECD04 /* Assets.xcassets */,
 				AC49A57A224D442A004ECD04 /* LaunchScreen.storyboard */,
 				AC49A57D224D442A004ECD04 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC49A574224D4427004ECD04 /* ViewController.swift in Sources */,
+				AC49A584224D44B7004ECD04 /* MyViewController.swift in Sources */,
 				AC49A572224D4427004ECD04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
