@@ -23,20 +23,42 @@
                                 <color key="pageIndicatorTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="actionDots:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ycd-0W-eee"/>
+                                    <action selector="pageControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vaz-WV-ohM"/>
                                 </connections>
                             </pageControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="poJ-fN-IQE">
+                                <rect key="frame" x="20" y="89" width="374" height="29"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="IXr-9J-TrH"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rXi-Di-kg6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1pw-Va-xCb"/>
                             <constraint firstItem="rXi-Di-kg6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RUZ-1c-GiT"/>
+                            <constraint firstItem="poJ-fN-IQE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dmA-9T-iKs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXi-Di-kg6" secondAttribute="trailing" constant="20" id="ewY-U0-eY5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="poJ-fN-IQE" secondAttribute="trailing" constant="20" id="gLe-34-Ui0"/>
+                            <constraint firstItem="poJ-fN-IQE" firstAttribute="top" secondItem="rXi-Di-kg6" secondAttribute="bottom" constant="8" id="jDE-ER-wpS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="dots" destination="rXi-Di-kg6" id="Kd7-aj-tcA"/>
+                        <outlet property="segment" destination="poJ-fN-IQE" id="0vb-oq-HH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
