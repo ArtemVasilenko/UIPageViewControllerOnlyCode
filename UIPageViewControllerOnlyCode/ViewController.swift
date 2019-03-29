@@ -56,8 +56,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
     @IBAction func pageControlAction(_ sender: UIPageControl) {
         pageContainer.setViewControllers([myVCs[sender.currentPage]], direction: .forward, animated: true, completion: nil)
         
@@ -70,28 +68,28 @@ class ViewController: UIViewController {
         index = sender.currentPage
     }
     
-        
-        func createVCs() {
-            for i in 0..<10 {
-                let myVC = MyViewController()
-                
-                let btn = UIButton()
-                btn.backgroundColor = .rnd()
-                btn.frame = CGRect(x: 110, y: 250, width: 100, height: 50)
-                btn.setTitle(String(i), for: .normal)
-                btn.setTitle(String(i + 1), for: .highlighted)
-                btn.setTitleColor(.rnd(), for: .normal)
-                btn.setTitleColor(.rnd(), for: .highlighted)
-                btn.layer.borderWidth = 5
-                btn.layer.borderColor = UIColor.rnd().cgColor
-                btn.layer.cornerRadius = 10
-                
-                myVC.view.backgroundColor = .rnd()
-                myVC.view.addSubview(btn)
-                
-                myVCs.append(myVC)
-            }
+    func createVCs() {
+        for i in 0..<10 {
+            let myVC = MyViewController()
+            
+            let btn = UIButton()
+            btn.backgroundColor = .rnd()
+            btn.frame = CGRect(x: 110, y: 250, width: 100, height: 50)
+            btn.setTitle(String(i), for: .normal)
+            btn.setTitle(String(i + 1), for: .highlighted)
+            btn.setTitleColor(.rnd(), for: .normal)
+            btn.setTitleColor(.rnd(), for: .highlighted)
+            btn.layer.borderWidth = 5
+            btn.layer.borderColor = UIColor.rnd().cgColor
+            btn.layer.cornerRadius = 10
+            
+            myVC.view.backgroundColor = .rnd()
+            myVC.view.addSubview(btn)
+            
+            myVCs.append(myVC)
         }
+    }
+    
     }
     
     extension UIColor {
@@ -102,8 +100,7 @@ class ViewController: UIViewController {
             
         }
     }
-    
-    
+
     extension ViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
         func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
             
@@ -116,9 +113,7 @@ class ViewController: UIViewController {
             
             guard previusIndex >= 0 else { return nil }
             guard myVCs.count > previusIndex else { return nil }
-            //dots.currentPage = previusIndex
-            //print(dots.currentPage)
-            //segment.selectedSegmentIndex = previusIndex
+        
             return myVCs[previusIndex]
             
         }
@@ -134,10 +129,7 @@ class ViewController: UIViewController {
             
             guard nextIndex >= 0 else { return nil }
             guard myVCs.count > nextIndex else { return nil }
-            print("1) dots.currentPage \(dots.currentPage) + current index \(currentIndex)")
-            
-            print("2) dots.currentPage \(dots.currentPage) + current index \(currentIndex)")
-            //segment.selectedSegmentIndex = nextIndex
+        
             return myVCs[nextIndex]
         }
         
